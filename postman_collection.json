@@ -1,0 +1,168 @@
+{
+	"info": {
+		"_postman_id": "eacd21d3-a0a7-484f-9bd4-708330d08d38",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37322077"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8000/client/signup",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"email\": \"string\",\n  \"password\": \"string\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/client/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"client",
+						"signup"
+					]
+				},
+				"description": "Generated from cURL: curl -X 'POST' \\\n  'http://localhost:8000/client/signup' \\\n  -H 'accept: application/json' \\\n  -H 'Content-Type: application/json' \\\n  -d '{\n  \"email\": \"string\",\n  \"password\": \"string\"\n}'"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/client/verify-email/4",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8000/client/verify-email/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"client",
+						"verify-email",
+						"4"
+					]
+				},
+				"description": "Generated from cURL: curl -X 'GET' \\\n  'http://localhost:8000/client/verify-email/4' \\\n  -H 'accept: application/json'"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/client/client/generate-token/9",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8000/client/client/generate-token/9",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"client",
+						"client",
+						"generate-token",
+						"9"
+					]
+				},
+				"description": "Generated from cURL: curl -X 'GET' \\\n  'http://localhost:8000/client/client/generate-token/9' \\\n  -H 'accept: application/json'\n"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/ops/upload",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"contentType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+							"type": "file",
+							"src": "A60205222239_sonali_minorproject[1] (1).docx"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/ops/upload",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"ops",
+						"upload"
+					]
+				},
+				"description": "Generated from cURL: curl -X 'POST' \\\n  'http://localhost:8000/ops/upload' \\\n  -H 'accept: application/json' \\\n  -H 'Content-Type: multipart/form-data' \\\n  -F 'file=@A60205222239_sonali_minorproject[1] (1).docx;type=application/vnd.openxmlformats-officedocument.wordprocessingml.document'\n"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/client/download-file/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmaWxlX2lkIjo5LCJleHAiOjE3NDg2MjkzMjF9.Z0F4T8XIwaP2gPuJyyBh-pHWIGlYQeEGODdK9hHvRE8",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8000/client/download-file/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmaWxlX2lkIjo5LCJleHAiOjE3NDg2MjkzMjF9.Z0F4T8XIwaP2gPuJyyBh-pHWIGlYQeEGODdK9hHvRE8",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"client",
+						"download-file",
+						"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmaWxlX2lkIjo5LCJleHAiOjE3NDg2MjkzMjF9.Z0F4T8XIwaP2gPuJyyBh-pHWIGlYQeEGODdK9hHvRE8"
+					]
+				},
+				"description": "Generated from cURL: curl -X 'GET' \\\n  'http://localhost:8000/client/download-file/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmaWxlX2lkIjo5LCJleHAiOjE3NDg2MjkzMjF9.Z0F4T8XIwaP2gPuJyyBh-pHWIGlYQeEGODdK9hHvRE8' \\\n  -H 'accept: application/json'"
+			},
+			"response": []
+		}
+	]
+}
