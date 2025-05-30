@@ -10,13 +10,13 @@ MAX_TRIES = 10
 for attempt in range(MAX_TRIES):
     try:
         Base.metadata.create_all(bind=engine)
-        print("✅ Database ready!")
+        print("Database ready!")
         break
     except OperationalError:
-        print(f"⏳ Waiting for database... (attempt {attempt + 1})")
+        print(f"Waiting for database(attempt {attempt + 1})")
         time.sleep(2)
 else:
-    raise RuntimeError("❌ Could not connect to database after retries.")
+    raise RuntimeError("Could not connect to database ")
 
 app = FastAPI(title="Secure File Sharing")
 app.include_router(client.router, prefix="/client", tags=["Client"])
