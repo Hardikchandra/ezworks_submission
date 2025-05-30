@@ -35,28 +35,6 @@ A secure file-sharing backend built with ⚡ FastAPI, 🐘 PostgreSQL, and 🐳 
 | Passlib    | Password hashing (bcrypt)   |
 
 
-
-📁 Folder Structure
-.
-├── app/
-│   ├── main.py                  # FastAPI entrypoint
-│   ├── models.py                # SQLAlchemy models
-│   ├── schemas.py               # Pydantic schemas
-│   ├── auth.py                  # Hashing, JWT, role checks
-│   ├── utils.py                 # Token utilities
-│   └── routes/
-│       ├── client.py            # Client endpoints
-│       └── ops.py               # Ops endpoints
-├── files/                       # Uploaded files (local storage)
-├── SecureFileSharing.postman_collection.json
-├── .env                         # Environment variables
-├── Dockerfile
-├── docker-compose.yml
-├── requirements.txt
-└── README.md
-
-
-
 🏁 Deployment Status
 ✅ This project is ready for production deployment.
 ✅ The most important step — Dockerizing the application — has been completed.
